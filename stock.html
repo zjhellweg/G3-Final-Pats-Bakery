@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rick's Carpentry</h1>
+    </header>
+    <h2>Stock Inventory</h2>
+    <div class="content">
+        <form action="post" class="blank">
+            <label for="material">Material to stock:</label>
+            <select name="material" id="material">
+                <option value="2x4">2x4 Lumber</option>
+                <option value="2x6">2x6 Lumber</option>
+                <option value="1x2">1x2 Lumber</option>
+                <option value="prefin">Pre-finished Top</option>
+                <option value="shims">Shims</option>
+                <option value="woodglue">Wood Glue</option>
+            </select>
+            <label for="qty">Quantity to stock:</label><input type="text" name="qty">
+            <br>
+            <input type="submit" value="Stock">
+            <a href="index.html"><input type="button" value="Cancel"></a>
+        </form>
+    </div>
+    <footer>
+        Copyright 2022 Rick's Carpentry
+    </footer>
+</body>
+</html>

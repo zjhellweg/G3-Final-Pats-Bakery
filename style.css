@@ -1,0 +1,77 @@
+:root{
+    --rc-blue: #3B8EA5;
+    --rc-black: #312F2F;
+    --rc-green: #BCEBCB;
+    --rc-pink: #E8C1C5;
+    --rc-yellow: #FFC482;
+}
+
+html{
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--rc-black);
+}
+body{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--rc-blue);
+    margin: 0;
+}
+header{
+    text-align: left;
+    background-color: var(--rc-black);
+    color: white;
+    padding: rem;
+}
+header>h1{
+    margin-left: 1rem;
+}
+table, form{
+    margin: 1rem auto 1rem auto;
+    border-collapse: collapse;
+    max-width: 500px;
+    background-color: var(--rc-green);
+}
+th{
+    border: 3px solid;
+}
+td{
+    border: 1px solid;
+}
+.content{
+    flex: 1 0 auto;
+}
+footer{
+    flex-shrink: 0;
+}
+.blank{
+    background-color: var(--rc-yellow);
+}
+.invalid{
+    background-color: var(--rc-pink);
+}
+.valid{
+    background-color: var(--rc-green);
+}
+
+/* <form styles> */
+label,
+input, select {
+  /* In order to define widths */
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  /* Positions the label text beside the input */
+  text-align: right;
+}
+
+label+input, label+select{
+  width: 40%;
+  /* margin-left to create a gutter between the label and input */
+  margin: 0 0% 1% 4%;
+}
+/* </form styles> */
