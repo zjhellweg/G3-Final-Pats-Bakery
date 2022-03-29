@@ -28,17 +28,23 @@ header{
 header>h1{
     margin-left: 1rem;
 }
+h2{
+    background-color: var(--rc-green);
+    margin: auto;
+}
 table, form{
     margin: 1rem auto 1rem auto;
     border-collapse: collapse;
     max-width: 500px;
-    background-color: var(--rc-green);
 }
 th{
     border: 3px solid;
 }
 td{
     border: 1px solid;
+}
+th, td{
+    background-color: var(--rc-green);
 }
 .content{
     flex: 1 0 auto;
@@ -54,6 +60,11 @@ footer{
 }
 .valid{
     background-color: var(--rc-green);
+}
+.invBtn{
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem;
 }
 
 /* <form styles> */

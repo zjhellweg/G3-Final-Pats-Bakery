@@ -11,9 +11,10 @@
     <header>
         <h1>Rick's Carpentry</h1>
     </header>
-    <h2>Stock Inventory</h2>
+    
     <div class="content">
-        <form action="post" class="blank">
+        <form action="index.html" class="blank" id="form">
+            <h2>Stock Inventory</h2>
             <label for="material">Material to stock:</label>
             <select name="material" id="material">
                 <option value="2x4">2x4 Lumber</option>
@@ -23,14 +24,15 @@
                 <option value="shims">Shims</option>
                 <option value="woodglue">Wood Glue</option>
             </select>
-            <label for="qty">Quantity to stock:</label><input type="text" name="qty">
+            <label for="qty">Quantity to stock:</label><input type="number" name="qty" id="qty">
             <br>
-            <input type="submit" value="Stock">
-            <a href="index.html"><input type="button" value="Cancel"></a>
+            <input type="submit" value="Stock" class="invBtn">
+            <a href="index.html"><input type="button" value="Cancel" class="invBtn"></a>
         </form>
     </div>
     <footer>
         Copyright 2022 Rick's Carpentry
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
