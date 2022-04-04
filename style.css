@@ -1,36 +1,54 @@
 :root{
-    --rc-blue: #3B8EA5;
-    --rc-black: #312F2F;
-    --rc-green: #BCEBCB;
-    --rc-pink: #E8C1C5;
-    --rc-yellow: #FFC482;
+    --pb-blue: #4281A4; 
+    --pb-black: #444140;
+    --pb-purple: #CA61C3;
+    --pb-pink: #EE85B5;
+    --pb-green: #a9f0d1;
+    --pb-yellow: #F3C178;
+    --pb-red: #7D1128;
+    --pb-white: whitesmoke;
+}
+@font-face {
+    font-family: EdwardianScript;
+    src: url(Edwardian\ Script\ ITC.TTF);
 }
 
 html{
     height: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--rc-black);
+    font-family: 'Times New Roman', Times, serif;
 }
 body{
     text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--rc-blue);
-    margin: 0;
+    background-color: var(--pb-white);
+    margin: auto;
+    color: var(--pb-pink);
+    max-width: 90%;
 }
 header{
     text-align: left;
-    background-color: var(--rc-black);
+    background-color: var(--pb-pink);
     color: white;
     padding: rem;
+    font-family: EdwardianScript;
 }
 header>h1{
     margin-left: 1rem;
+    float: inline-start;
+}
+nav{
+    float: inline-end;
+    font-size: xx-large;
+    padding: 1rem;
 }
 h2{
-    background-color: var(--rc-green);
+    color: var(--pb-purple);
     margin: auto;
+    font-family: EdwardianScript;
+    padding: 1rem;
+    font-size: x-large;
 }
 table, form{
     margin: 1rem auto 1rem auto;
@@ -44,7 +62,7 @@ td{
     border: 1px solid;
 }
 th, td{
-    background-color: var(--rc-green);
+    background-color: var(--pb-green);
 }
 .content{
     flex: 1 0 auto;
@@ -53,13 +71,13 @@ footer{
     flex-shrink: 0;
 }
 .blank{
-    background-color: var(--rc-yellow);
+    background-color: var(--pb-yellow);
 }
 .invalid{
-    background-color: var(--rc-pink);
+    background-color: var(--pb-pink);
 }
 .valid{
-    background-color: var(--rc-green);
+    background-color: var(--pb-green);
 }
 .invBtn{
     width: 5rem;
