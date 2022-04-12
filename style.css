@@ -9,17 +9,17 @@
     --pb-white: whitesmoke;
 }
 @font-face {
-    font-family: EdwardianScript;
-    src: url(Edwardian\ Script\ ITC.TTF);
+    font-family: Roboto;
+    src: url(fonts/roboto.light.ttf);
 }
 @font-face {
-    font-family: Galvji;
-    src: url(Galvji.ttc);
+    font-family: Roboto;
+    src: url(fonts/roboto.light.ttf);
 }
 
 html{
     height: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Roboto;
 }
 body{
     text-align: center;
