@@ -35,7 +35,6 @@ header{
     text-align: left;
     background-color: var(--pb-lightgreen);
     color: white;
-    padding: rem;
     font-family: Galvji;
 }
 header>h1{
@@ -44,8 +43,15 @@ header>h1{
 }
 nav{
     float: inline-end;
-    font-size: xx-large;
+    font-size: 2rem;
     padding: 1rem;
+}
+#NavLogo{
+    width: 110px;
+}
+a, a:visited{
+    color: inherit;
+    text-decoration: inherit;
 }
 h2{
     color: var(--pb-brown);
@@ -53,6 +59,13 @@ h2{
     font-family: Galvji;
     padding: 1rem;
     font-size: x-large;
+}
+h3{
+    color: var(--pb-brown);
+    margin: auto;
+    font-family: Galvji;
+    padding: 1rem;
+    font-size: large;
 }
 table, form{
     margin: 1rem auto 1rem auto;
