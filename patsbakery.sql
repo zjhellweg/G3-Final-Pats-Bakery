@@ -47,6 +47,8 @@ CREATE TABLE `employee` (
   `EmpLastName` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
   `EmpEmail` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
   `EmpPhone` varchar(16) COLLATE utf8mb4_general_ci NOT NULL
+  `EmpPassword` varchar(50) COLLATE utf8mb4_general_ci NULL,
+  `EmpUserName` varchar(12) COLLATE utf8mb4_general_ci NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
